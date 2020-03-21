@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itRead">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/assetManagement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HeaderTextViewStyle"
+                android:text="Asset Management"
+                android:gravity="center"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/form_boarder"
+                         android:padding="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:id="@+id/label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#002147"
+                            android:text="Read Asset Form"
+                            android:gravity="center" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.2pt"
+                            android:background="@color/dark_gray"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/serialView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/serialNumber" />
+
+                            <TextView
+                                android:id="@+id/serialEdit"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/makeView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/make"/>
+
+                            <TextView
+                                android:id="@+id/makeEdit"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/modelView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/model"/>
+
+                            <TextView
+                                android:id="@+id/modelEdit"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/supplierView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/supplier" />
+
+                            <TextView
+                                android:id="@+id/supplierEdit"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:background="@drawable/boarder"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/prizeView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/prize" />
+
+                                <TextView
+                                    android:id="@+id/prizeEdit"
+                                    android:layout_width="match_parent"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:background="@drawable/boarder"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/currencyView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Currency :" />
+                                <TextView
+                                    android:id="@+id/currencyList"
+                                    android:background="@drawable/boarder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog"></TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/macIDView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/macId"
+                                app:passwordToggleEnabled="false"/>
+
+                            <TextView
+                                android:id="@+id/macIDEdit"
+                                android:layout_width="match_parent"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/boughtView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/boughtOn" />
+
+                            <TextView
+                                android:id="@+id/boughtEdit"
+                                android:layout_width="match_parent"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:focusableInTouchMode="true"
+                                android:background="@drawable/boarder"
+                                android:cursorVisible="false"
+                                android:focusable="false"  />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/assignView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/assignTo"
+                                android:textAlignment="inherit" />
+
+                            <TextView
+                                android:id="@+id/assignList"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:spinnerMode="dialog"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/statusView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/status"
+                                android:textAlignment="inherit" />
+
+
+                            <TextView
+                                android:id="@+id/statusList"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:spinnerMode="dialog"></TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/typeView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/equipmentType"/>
+
+                            <TextView
+                                android:id="@+id/typeList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boarder">
+                                android:spinnerMode="dialog"></TextView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/locationView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/location"
+                                android:textAlignment="inherit" />
+
+                            <TextView
+                                android:id="@+id/locationList"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/boarder"
+                                android:layout_height="wrap_content"
+                                android:spinnerMode="dialog"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mtem.asset_management_app">
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:configChanges="locale"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pinkblue_logo_48"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pinkblue_logo_48"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.violet"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ApprovalUser" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ForgotPassword" />
+        <activity
+            android:name=".FgOtTeVeScrap"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".FgOtTeVeRead"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".FgOtTeVeUpdate"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".FgOtTeVeAssign"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommunicationRead"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommunicationUpdate"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommunicationScrap"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommunicationAssign"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".itScrap"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".furnitureScrap"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".itRead"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".furnitureRead"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".itUpdate"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".furnitureUpdate"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".itAssign"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".furnitureAssign"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CaptureActivityPortrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ScanBarcode" />
+        <activity android:name=".QueryInventory" />
+        <activity android:name=".NewBarcode2" />
+        <activity android:name=".NewBarcode1" />
+        <activity android:name=".Home" />
+        <activity android:name=".AssignAssetType" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

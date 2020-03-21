@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignAssetType">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/assetManagement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                style="@style/HeaderTextViewStyle"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Asset Management"/>
+
+            <TextView
+                android:id="@+id/barcodeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:background="@drawable/spinner_boarder"/>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="270dp"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_height="wrap_content"
+                         android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                             android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/communicationDevices"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:background="#E7E5E5"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/blue_cd" />
+                                <TextView
+                                    android:id="@+id/communicationDevicesText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:textSize="11sp"
+                                    android:text="@string/communicationDevicesText"
+                                    android:layout_marginTop="-30dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp">
+
+                                <ImageButton
+                                    android:id="@+id/finishedGoods"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_fg" />
+                                <TextView
+                                    android:id="@+id/finishedGoodsText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/finishedGoodsText"
+                                    android:layout_marginTop="-25sp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/furniture"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_fur" />
+                                <TextView
+                                    android:id="@+id/furnitureText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/furnitureText"
+                                    android:layout_marginTop="-25sp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp">
+
+                                <ImageButton
+                                    android:id="@+id/itEquipment"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_ite" />
+                                <TextView
+                                    android:id="@+id/itEquipmentText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/itEquipmentText"
+                                    android:layout_marginTop="-25sp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/technicalEquipment"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:paddingLeft="1dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="1dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_te" />
+                                <TextView
+                                    android:id="@+id/technicalEquipmentText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:textSize="11sp"
+                                    android:text="@string/technicalEquipmentText"
+                                    android:layout_marginTop="-24dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp">
+
+                                <ImageButton
+                                    android:id="@+id/vehicle"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_vehicles" />
+                                <TextView
+                                    android:id="@+id/vehicleText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/vehicleText"
+                                    android:layout_marginTop="-25sp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/others"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                     android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingRight="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:background="#E7E5E5"
+                                    android:src="@drawable/blue_others" />
+                                <TextView
+                                    android:id="@+id/othersText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/otherText"
+                                    android:layout_marginTop="-25sp"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#002147"
+                                    android:textAlignment="center"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

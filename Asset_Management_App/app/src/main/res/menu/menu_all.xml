@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BaseActivity">
+    <item
+        android:id="@+id/allOption1"
+        android:orderInCategory="100"
+        android:title="User Information"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/allOption2"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/allOption3"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/allOption4"
+        android:orderInCategory="100"
+        android:title="Exit App"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="prefs_theme_key" translatable="false">theme</string>
+    <string name="prefs_language_key" translatable="false">language</string>
+    <string name="pre_user_id" translatable="false">id</string>
+    <string name="pre_user_pass" translatable="false">pass</string>
+
+    <string name="app_name" translatable="false"><font fgcolor="#FCF9F9">Asset_Management</font></string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="logoutButton">Logout</string>
+    <string name="inventoryManagementText">Inventory Management</string>
+    <string name="createNewAssetButton">Create New Asset</string>
+    <string name="assignAssetButton">Assign Asset</string>
+    <string name="updateAssetButton">Update Asset</string>
+    <string name="readAssetButton">Read Asset</string>
+    <string name="scrapAssetButton">Scrap Asset</string>
+    <string name="queryInventoryButton">Query Inventory</string>
+    <string name="uniqueBarcodeGenerated">Unique QR_code Generated</string>
+    <string name="printBarcodeAndGotoNextPage">Print QR_code And Goto Next Page</string>
+    <string name="downloadBarcode">Download QR_code</string>
+    <string name="selectAssetType">Select Asset Type</string>
+    <string name="communicationDevicesText">Communication Devices</string>
+    <string name="finishedGoodsText">Finished Goods</string>
+    <string name="furnitureText">Furniture</string>
+    <string name="itEquipmentText">IT_Equipment</string>
+    <string name="technicalEquipmentText">Technical Equipment</string>
+    <string name="vehicleText">Vehicle</string>
+    <string name="otherText">Others</string>
+    <string name="scanAssetBarcode">Scan Asset Barcode</string>
+    <string name="getBarcode">Get Barcode</string>
+    <string name="submit">Submit</string>
+    <string name="serialNumber">Serial Number : </string>
+    <string name="make">Make : </string>
+    <string name="macId">MAC ID : </string>
+    <string name="model">Model : </string>
+    <string name="boughtOn">Bought On : </string>
+    <string name="equipmentType">Equipment Type : </string>
+    <string name="assignTo">Assign To : </string>
+    <string name="status">Status : </string>
+    <string name="location">Location : </string>
+    <string name="imeiNumber">IMEI Number : </string>
+    <string name="supplier">Supplier : </string>
+    <string name="prize">Prize : </string>
+    <string name="length">Length : </string>
+    <string name="width">Width : </string>
+    <string name="height">Height : </string>
+    <string name="vin">VIN : </string>
+    <string name="saveButton">Save</string>
+    <string name="readButton">Read</string>
+    <string name="updateButton">Update</string>
+    <string name="scrapButton">Scrap</string>
+    <string name="userAssigned">User Assigned : </string>
+    <string name="slNoTable"> Sl.No </string>
+    <string name="barcodeValueTable">QR_code Value</string>
+    <string name="barcodeImageTable">QR_code Image</string>
+    <string name="assignToTable">Assign To</string>
+    <string name="assetTypeTable">Asset Type</string>
+    <string name="equipTypeTable">Equipment Type</string>
+    <string name="statusTable">Status</string>
+    <string name="locationTable">Location</string>
+    <string name="loggedIn">Logged In</string>
+    <string name="somethingWentWrong">Something Went Wrong..!</string>
+    <string name="fileStoredIn">Scrap</string>
+    <string name="invalidUserPassword">Invalid Username/Password</string>
+    <string name="assetSaved">Asset Saved</string>
+    <string name="assetUpdated">Asset Updated</string>
+    <string name="assetScraped">Asset Scrapped</string>
+    <string name="userNotAssigned">User Not-Yet Assigned</string>
+    <string name="userLogout">User Logout</string>
+    <string name="exitApp">Exit App</string>
+    <string name="wantToLogout">Do You Want To Logout From Inventory Management</string>
+    <string name="wantToExit">Do You Want to Exit From Inventory Management </string>
+    <string name="fillForm">User Should Fill All Fields In Form</string>
+    <string name="warning">Warning..!</string>
+    <string name="saveEntered">Leaving This Page Will Cause Loos Of Entered Data..! Do You Want To Save The Data </string>
+    <string name="wantToScrap">Scrapping Data Can not Be Undo By User..! Do You Want to Scrap Data </string>
+    <string name="asset_management">Asset Management</string>
+    <string name="signed_up_users">Signed Up Users</string>
+    <string name="unique_qr_code_generated">Unique QR-Code Generated:</string>
+    <string name="downloadAndAssign">Download And Assign</string>
+
+    <string-array name="language_option">
+        <item>Languages</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>German</item>
+    </string-array>
+    <string-array name="theme_option">
+        <item>Themes</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Gray</item>
+        <item>Maroon</item>
+        <item>Cyan</item>
+    </string-array>
+
+</resources>

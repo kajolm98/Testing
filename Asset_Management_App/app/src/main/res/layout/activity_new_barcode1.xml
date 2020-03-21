@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBarcode1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="40dp"
+                android:gravity="center"
+                 android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newQrCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/HeaderTextViewStyle"
+                    android:text="New QR-Code" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="top|center"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/uniqueBarcodeGenerated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 android:text="New QR :" />
+            <TextView
+                android:id="@+id/barcodeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/pink"
+                android:textIsSelectable="true"
+                 android:background="@drawable/spinner_boarder"
+                android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/printAndNextButton"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+              android:text="@string/printBarcodeAndGotoNextPage"
+             android:textSize="14sp" />
+    </LinearLayout>
+        </ScrollView>
+            </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

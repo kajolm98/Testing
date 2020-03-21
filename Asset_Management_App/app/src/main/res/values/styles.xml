@@ -1,0 +1,74 @@
+<resources>
+    <style name="AppTheme.violet" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+         <item name="android:windowBackground">@color/white</item>
+         <item name="android:fontFamily">@font/gothambook</item>
+         <item  name="android:textColor">@color/black</item>
+        <item  name="android:textSize">14sp</item>
+        <item name="actionBarStyle">@style/MyActionBarLogo</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+         <item name="android:buttonStyle">@style/ButtonStyle</item>
+     </style>
+    <style name="actionbar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActionBarLogo" parent="@style/Widget.AppCompat.ActionBar">
+         <item name="logo">@drawable/pink_trans</item>
+         <item name="background">@color/blue</item>
+        <item name="displayOptions">useLogo|showHome</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="actionbar">barstyle</style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/menusetting</item>
+        <item name="android:contentDescription">"Settings"</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#002147</item>
+         <item name="boxStrokeWidth">1dp</item>
+    </style>
+    <style name="MyCheckboxTheme" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textSize">10sp</item>
+        <item name="buttonTint">@color/white</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/gothambook</item>
+        <item name="android:textColor">@color/blue</item>
+         <item name="android:padding">10dp</item>
+         <item name="android:background">@drawable/form_boarder</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/gothambook</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="HeaderTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/gothambook</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/gothambook</item>
+          <item name="android:textSize">12sp</item>
+        <item name="buttonStyle">@drawable/vo_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
